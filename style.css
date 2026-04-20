@@ -1,0 +1,26 @@
+
+/* Efek glow kustom untuk teks dan kotak */
+.glow-text { 
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5); 
+}
+
+.glow-box { 
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.15); 
+}
+
+/* Transisi halus saat melakukan scroll halaman */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mempercantik tampilan scrollbar di sisi kanan browser */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0a1a;
+}
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 10px;
+}

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Developer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0a0a1a',
+                        cardbg: '#111129',
+                        neonblue: '#3b82f6',
+                        neonpurple: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-box-sm {
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-darkbg text-white font-sans">
+
+    <nav class="container mx-auto px-6 py-4 flex items-center justify-between border-b border-gray-800 relative z-50">
+        
+        <div class="flex-1 flex justify-start">
+            <div class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-neonblue to-neonpurple">
+                SOFTWARE <span class="text-gray-300 font-normal">Engineer Student</span>
+            </div>
+        </div>
+        
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+            <a href="#home" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">Home</a>
+            <a href="#about" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">About</a>
+            <a href="#skills" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">Skills</a>
+            <a href="#projects" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">Projects</a>
+            <a href="#contact" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">Contact</a>
+        </div>
+        
+        <div class="flex-1 flex justify-end items-center">
+            <div class="hidden md:block">
+                <a href="mailto:alvinfirmansyahx9@gmail.com?subject=Tawaran%20Kerja/Proyek%20dari%20Website%20Portofolio" class="inline-block bg-cardbg border border-neonblue text-neonblue px-6 py-2 rounded-full hover:bg-neonblue hover:text-white transition duration-300 text-sm">
+                    Hire Me
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-cardbg px-6 py-4 space-y-3 border-b border-gray-800">
+        <a href="#" class="block text-sm text-gray-400 hover:text-white">Home</a>
+        <a href="#" class="block text-sm text-gray-400 hover:text-white">About</a>
+        <a href="#" class="block text-sm text-gray-400 hover:text-white">Skills</a>
+        <a href="#" class="block text-sm text-gray-400 hover:text-white">Projects</a>
+        <a href="#" class="block text-sm text-gray-400 hover:text-white">Contact</a>
+        <a href="mailto:alvinfirmansyahx9@gmail.com?subject=Tawaran%20Kerja/Proyek%20dari%20Website%20Portofolio" class="block text-center w-full mt-2 bg-cardbg border border-neonblue text-neonblue px-6 py-2 rounded-full hover:bg-neonblue hover:text-white transition duration-300 text-sm">
+            Hire Me
+        </a>
+    </div>
+
+    <section id="home"
+        class="container mx-auto px-6 py-20 flex flex-col-reverse md:flex-row items-center justify-between">
+       <div class="md:w-1/2 mt-10 md:mt-0 md:ml-10">
+            <h2 class="text-3xl font-semibold mb-2">Hi, I'm</h2>
+            <h1
+                class="text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 glow-text">
+                Mohammad Alvin Firmansyah
+            </h1>
+            <p class="text-gray-400 mb-8 max-w-md leading-relaxed text-sm">
+                I am a passionate software engineering student focusing on learning C++, Java, JS, PHP, and Python. I
+                love clean code and building efficient solutions.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#projects" class="inline-block bg-gradient-to-r from-neonblue to-neonpurple text-white px-8 py-3 rounded-full hover:opacity-90 transition shadow-lg shadow-blue-500/30 text-sm">
+                    View Projects
+                </a>
+                
+                <a href="#contact" class="inline-block bg-transparent border border-gray-600 text-gray-300 px-8 py-3 rounded-full hover:border-white hover:text-white transition text-sm">
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center mt-12 md:mt-0 relative">
+
+            <div class="relative w-[500px] h-[500px] flex items-center justify-center">
+
+                <div class="absolute w-80 h-80 bg-neonblue rounded-full blur-[110px] opacity-20 z-0"></div>
+
+                <div
+                    class="relative w-96 h-96 rounded-full border-2 border-gray-800 p-3 glow-box bg-cardbg flex items-center justify-center overflow-hidden z-10 transition duration-500 group">
+
+                    <img src="No.jpeg" alt="Foto Profil Alvin"
+                        class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition duration-500">
+
+                </div>
+
+                <div class="absolute inset-0 z-20 pointer-events-none md:pointer-events-auto">
+
+                    <div class="absolute w-16 h-16 bg-cardbg border border-gray-800 rounded-full flex items-center justify-center p-2.5 glow-box-sm -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition duration-300"
+                        style="top: 50%; left: calc(50% + 220px);">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                            alt="C++" class="w-full h-full">
+                    </div>
+
+                    <div class="absolute w-16 h-16 bg-cardbg border border-gray-800 rounded-full flex items-center justify-center p-2.5 glow-box-sm -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition duration-300"
+                        style="top: calc(50% + 155px); left: calc(50% + 155px);">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                            alt="Java" class="w-full h-full">
+                    </div>
+
+                    <div class="absolute w-16 h-16 bg-cardbg border border-gray-800 rounded-full flex items-center justify-center p-2.5 glow-box-sm -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition duration-300"
+                        style="top: calc(50% + 220px); left: 50%;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                            alt="JS" class="w-full h-full rounded">
+                    </div>
+
+                    <div class="absolute w-16 h-16 bg-cardbg border border-gray-800 rounded-full flex items-center justify-center p-2.5 glow-box-sm -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition duration-300"
+                        style="top: calc(50% + 155px); left: calc(50% - 155px);">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                            alt="PHP" class="w-full h-full">
+                    </div>
+
+                    <div class="absolute w-16 h-16 bg-cardbg border border-gray-800 rounded-full flex items-center justify-center p-2.5 glow-box-sm -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition duration-300"
+                        style="top: 50%; left: calc(50% - 220px);">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            alt="Python" class="w-full h-full">
+                    </div>
+
+                    <div class="absolute w-16 h-16 bg-cardbg border border-gray-800 rounded-full flex items-center justify-center p-2.5 glow-box-sm -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition duration-300"
+                        style="top: calc(50% - 155px); left: calc(50% - 155px);">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                            alt="HTML" class="w-full h-full">
+                    </div>
+
+                    <div class="absolute w-16 h-16 bg-cardbg border border-gray-800 rounded-full flex items-center justify-center p-2.5 glow-box-sm -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition duration-300"
+                        style="top: calc(50% - 220px); left: 50%;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                            alt="CSS" class="w-full h-full">
+                    </div>
+
+                    <div class="absolute w-16 h-16 bg-cardbg border border-gray-800 rounded-full flex items-center justify-center p-2.5 glow-box-sm -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition duration-300"
+                        style="top: calc(50% - 155px); left: calc(50% + 155px);">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB" class="w-full h-full">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="about" class="container mx-auto px-6 py-20 bg-[#070714]">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
+                <p class="text-gray-400 leading-relaxed mb-4 text-sm">
+                    Hello! I am <span class="text-white font-semibold">Mohammad Alvin Firmansyah</span>, a Software
+                    Engineering student who is highly passionate about the tech world. I love solving logical problems
+                    and transforming them into clean, efficient, and functional code.
+                </p>
+                <p class="text-gray-400 leading-relaxed mb-8 text-sm">
+                    My journey began out of curiosity about how applications are built from scratch. Now, I continue to
+                    hone my skills across various programming languages, from building desktop systems with C++ and
+                    Java, to designing dynamic websites with PHP, Python, and JavaScript.
+                </p>
+
+                <div class="flex gap-4">
+                    <div
+                        class="bg-cardbg p-4 rounded-xl border border-gray-800 flex-1 hover:border-neonblue transition duration-300">
+                        <h4 class="text-neonblue font-bold text-xl">Student</h4>
+                        <p class="text-xs text-gray-500 mt-1">Software Engineering</p>
+                    </div>
+                    <div
+                        class="bg-cardbg p-4 rounded-xl border border-gray-800 flex-1 hover:border-neonpurple transition duration-300">
+                        <h4 class="text-neonpurple font-bold text-xl">8+</h4>
+                        <p class="text-xs text-gray-500 mt-1">Tech Stack Learned</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 relative flex justify-center mt-10 md:mt-0">
+                <div class="absolute w-48 h-48 bg-neonpurple rounded-full blur-[80px] opacity-20"></div>
+
+                <img src="pp.jpeg" alt="Coding Illustration"
+                    class="rounded-2xl border border-gray-800 relative z-10 w-full max-w-sm object-cover opacity-80 hover:opacity-100 transition duration-500 shadow-2xl">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="container mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Skills & Technologies</h2>
+            <p class="text-gray-400 text-sm">Programming languages ​​and technologies that I master and use in projects.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl p-6 text-center hover:border-[#00599C] transition duration-300 group">
+                <div
+                    class="mb-4 flex justify-center group-hover:scale-110 group-hover:-translate-y-1 transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                        alt="C++ Logo" class="w-14 h-14">
+                </div>
+                <h3 class="font-semibold text-lg text-white mb-2">C++</h3>
+                <p class="text-xs text-gray-500">System & Logic</p>
+            </div>
+
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl p-6 text-center hover:border-[#ED8B00] transition duration-300 group">
+                <div
+                    class="mb-4 flex justify-center group-hover:scale-110 group-hover:-translate-y-1 transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                        alt="Java Logo" class="w-14 h-14">
+                </div>
+                <h3 class="font-semibold text-lg text-white mb-2">Java</h3>
+                <p class="text-xs text-gray-500">OOP & Desktop</p>
+            </div>
+
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl p-6 text-center hover:border-[#F7DF1E] transition duration-300 group">
+                <div
+                    class="mb-4 flex justify-center group-hover:scale-110 group-hover:-translate-y-1 transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                        alt="JavaScript Logo" class="w-14 h-14 rounded-md">
+                </div>
+                <h3 class="font-semibold text-lg text-white mb-2">JavaScript</h3>
+                <p class="text-xs text-gray-500">Interactive Web</p>
+            </div>
+
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl p-6 text-center hover:border-[#777BB4] transition duration-300 group">
+                <div
+                    class="mb-4 flex justify-center group-hover:scale-110 group-hover:-translate-y-1 transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                        alt="PHP Logo" class="w-14 h-14">
+                </div>
+                <h3 class="font-semibold text-lg text-white mb-2">PHP</h3>
+                <p class="text-xs text-gray-500">Backend Web</p>
+            </div>
+
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl p-6 text-center hover:border-[#3776AB] transition duration-300 group">
+                <div
+                    class="mb-4 flex justify-center group-hover:scale-110 group-hover:-translate-y-1 transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                        alt="Python Logo" class="w-14 h-14">
+                </div>
+                <h3 class="font-semibold text-lg text-white mb-2">Python</h3>
+                <p class="text-xs text-gray-500">Data & Scripts</p>
+            </div>
+
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl p-6 text-center hover:border-[#E34F26] transition duration-300 group">
+                <div
+                    class="mb-4 flex justify-center group-hover:scale-110 group-hover:-translate-y-1 transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                        alt="HTML5 Logo" class="w-14 h-14">
+                </div>
+                <h3 class="font-semibold text-lg text-white mb-2">HTML</h3>
+                <p class="text-xs text-gray-500">Web Structure</p>
+            </div>
+
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl p-6 text-center hover:border-[#1572B6] transition duration-300 group">
+                <div
+                    class="mb-4 flex justify-center group-hover:scale-110 group-hover:-translate-y-1 transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                        alt="CSS3 Logo" class="w-14 h-14">
+                </div>
+                <h3 class="font-semibold text-lg text-white mb-2">CSS</h3>
+                <p class="text-xs text-gray-500">Styling & Layout</p>
+            </div>
+
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl p-6 text-center hover:border-[#47A248] transition duration-300 group">
+                <div
+                    class="mb-4 flex justify-center group-hover:scale-110 group-hover:-translate-y-1 transition duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB Logo" class="w-14 h-14">
+                </div>
+                <h3 class="font-semibold text-lg text-white mb-2">MongoDB</h3>
+                <p class="text-xs text-gray-500">NoSQL Database</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="container mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Recent Projects</h2>
+            <p class="text-gray-400 text-sm">Here are some of the recent projects I've built during my studies.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl overflow-hidden hover:border-neonblue hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] transition duration-300 group">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
+                        alt="Student Management System"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-transparent transition"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl text-white mb-2">Manajemen PerumahanV2</h3>
+                    <p class="text-sm text-gray-400 mb-4 line-clamp-2">A desktop application to manage student data,
+                        built with Java and focusing on Object-Oriented Programming.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="text-[10px] bg-gray-800 text-gray-300 px-2 py-1 rounded-full border border-gray-700">Java</span>
+                        <span
+                            class="text-[10px] bg-gray-800 text-gray-300 px-2 py-1 rounded-full border border-gray-700">OOP</span>
+                        <span
+                            class="text-[10px] bg-gray-800 text-gray-300 px-2 py-1 rounded-full border border-gray-700">GUI</span>
+            
+                        
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://github.com/Furry-Indonesia/ManajemenPerumahanV2" target="_blank"
+                            class="bg-gradient-to-r from-blue-600 to-blue-500 text-white text-xs px-5 py-2 rounded-full hover:shadow-lg transition inline-block">
+                            Github >
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-cardbg border border-gray-800 rounded-xl overflow-hidden hover:border-neonblue hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] transition duration-300 group">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
+                        alt="Web Inventory Platform"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-transparent transition"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl text-white mb-2">Sistem Menu Makanan Restoran</h3>
+                    <p class="text-sm text-gray-400 mb-4 line-clamp-2">A web-based inventory system featuring CRUD
+                        operations and database integration.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="text-[10px] bg-gray-800 text-gray-300 px-2 py-1 rounded-full border border-gray-700">Java</span>
+                        <span
+                            class="text-[10px] bg-gray-800 text-gray-300 px-2 py-1 rounded-full border border-gray-700">OOP</span>
+                        
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://github.com/Team-X9/SistemMenumakananRestoran" target="_blank"
+                            class="bg-gradient-to-r from-blue-600 to-blue-500 text-white text-xs px-5 py-2 rounded-full hover:shadow-lg transition inline-block">
+                            Github >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="container mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Certification & Achievement</h2>
+            <p class="text-gray-400 text-sm">Validasi keterampilan dan pembelajaran mandiri yang saya capai.</p>
+        </div>
+
+        <div class="max-w-2xl mx-auto">
+            
+            <div class="bg-cardbg border border-gray-800 rounded-2xl p-8 md:p-10 relative overflow-hidden group hover:border-neonpurple transition duration-500">
+                
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-neonpurple rounded-full blur-[100px] opacity-0 group-hover:opacity-20 transition duration-500 pointer-events-none"></div>
+
+                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
+                    
+                    <div class="flex-shrink-0">
+                        <div class="w-24 h-24 rounded-2xl bg-darkbg border border-gray-700 flex items-center justify-center group-hover:scale-105 transition duration-500 shadow-lg shadow-purple-900/20">
+                            <svg class="w-12 h-12 text-neonpurple" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                        </div>
+                    </div>
+
+                    <div class="text-center md:text-left flex-1">
+                        <div class="inline-block px-3 py-1 bg-purple-900/30 border border-purple-800/50 rounded-full text-xs text-purple-300 font-medium mb-3">
+                            Verified Credential
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Nama Sertifikat Anda di Sini</h3>
+                        <p class="text-neonblue text-sm font-medium mb-3">Diterbitkan oleh: Nama Institusi (Contoh: Dicoding / Coursera)</p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Deskripsikan secara singkat apa yang Anda pelajari atau capai dalam sertifikasi ini. Fokuslah pada keterampilan teknis atau studi kasus nyata yang Anda selesaikan selama kursus berlangsung.
+                        </p>
+                        
+                        <a href="LINK_SERTIFIKAT_ANDA" target="_blank" class="inline-flex items-center text-sm font-medium text-white hover:text-neonpurple transition duration-300 group/link">
+                            View Certificate 
+                            <svg class="w-4 h-4 ml-1 transform group-hover/link:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-2">Contact Us</h2>
+            <p class="text-gray-400 text-sm">Have a project in mind? Let's connect and discuss how I can help bring your
+                ideas to life.</p>
+        </div>
+
+        <div
+            class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 bg-cardbg border border-gray-800 rounded-2xl p-8 md:p-12">
+            <div class="md:w-5/12">
+                <h3 class="text-2xl font-bold text-white mb-4">Get in touch today</h3>
+                <p class="text-gray-400 text-sm mb-8 leading-relaxed">
+                    I'm always open to discussing web development projects, creative ideas, or opportunities to be part
+                    of your vision.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-10 h-10 bg-darkbg border border-gray-800 rounded-full flex items-center justify-center text-neonblue">
+                            ✉
+                        </div>
+                        <div>
+                            <p class="text-white text-sm">alvinfirmansyahx9@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-10 h-10 bg-darkbg border border-gray-800 rounded-full flex items-center justify-center text-neonblue">
+                            📞
+                        </div>
+                        <div>
+                            <p class="text-white text-sm">+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-10 h-10 bg-darkbg border border-gray-800 rounded-full flex items-center justify-center text-neonblue">
+                            📍
+                        </div>
+                        <div>
+                            <p class="text-white text-sm">East Java, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-7/12">
+                <form action="https://formsubmit.co/alvinfirmansyahx9@gmail.com" method="POST" class="space-y-4">
+                    
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="space-y-1">
+                            <label class="text-xs text-gray-400">Name</label>
+                            <input type="text" name="Nama" required placeholder="Your Name" class="w-full bg-darkbg border border-gray-800 rounded-lg px-4 py-3 text-sm text-white focus:border-neonblue focus:ring-1 focus:ring-neonblue outline-none transition">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs text-gray-400">Email</label>
+                            <input type="email" name="Email" required placeholder="your@example.com" class="w-full bg-darkbg border border-gray-800 rounded-lg px-4 py-3 text-sm text-white focus:border-neonblue focus:ring-1 focus:ring-neonblue outline-none transition">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs text-gray-400">Phone</label>
+                            <input type="tel" name="Telepon" placeholder="+62 881 XXX XXX XXX" class="w-full bg-darkbg border border-gray-800 rounded-lg px-4 py-3 text-sm text-white focus:border-neonblue focus:ring-1 focus:ring-neonblue outline-none transition">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs text-gray-400">Company</label>
+                            <input type="text" name="Perusahaan" placeholder="Your Company" class="w-full bg-darkbg border border-gray-800 rounded-lg px-4 py-3 text-sm text-white focus:border-neonblue focus:ring-1 focus:ring-neonblue outline-none transition">
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <label class="text-xs text-gray-400">Message</label>
+                        <textarea name="Pesan" required rows="4" placeholder="Please type your message here..." class="w-full bg-darkbg border border-gray-800 rounded-lg px-4 py-3 text-sm text-white focus:border-neonblue focus:ring-1 focus:ring-neonblue outline-none transition resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-neonblue to-neonpurple text-white font-semibold py-3 rounded-lg hover:opacity-90 transition shadow-lg shadow-blue-500/20 mt-2">
+                        Send message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-cardbg border-t border-gray-800 py-8">
+        <div class="container mx-auto px-6">
+            
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                
+                <div class="flex-1 flex justify-center md:justify-start mb-6 md:mb-0 text-sm text-gray-500">
+                    &copy; 2026 Mohammad Alvin Firmansyah. All rights reserved.
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm font-medium text-gray-400 mb-6 md:mb-0">
+                    <a href="#home" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">Home</a>
+                    <a href="#about" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">About</a>
+                    <a href="#skills" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">Skills</a>
+                    <a href="#projects" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">Projects</a>
+                    <a href="#contact" class="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition duration-300">Contact</a>
+                </div>
+
+                <div class="flex-1 flex justify-center md:justify-end space-x-4">
+                    
+                    <a href="https://www.linkedin.com/in/mohammad-alvin-firmansyah-0223723a1/" target="_blank" class="w-8 h-8 bg-cardbg border border-gray-800 rounded flex items-center justify-center text-gray-400 hover:text-white hover:border-[#0A66C2] transition duration-300">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+
+                    <a href="https://github.com/alvinskie" target="_blank" class="w-8 h-8 bg-cardbg border border-gray-800 rounded flex items-center justify-center text-gray-400 hover:text-white hover:border-gray-400 transition duration-300">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                    </a>
+
+                    <a href="https://x.com/alvinzeus3" target="_blank" class="w-8 h-8 bg-cardbg border border-gray-800 rounded flex items-center justify-center text-gray-400 hover:text-white hover:border-[#1DA1F2] transition duration-300">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.557z"/></svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/lawrance_jk/" target="_blank" class="w-8 h-8 bg-cardbg border border-gray-800 rounded flex items-center justify-center text-gray-400 hover:text-white hover:border-[#E1306C] transition duration-300">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/></svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/ndak.tau.59899" target="_blank" class="w-8 h-8 bg-cardbg border border-gray-800 rounded flex items-center justify-center text-gray-400 hover:text-white hover:border-[#1877F2] transition duration-300">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
